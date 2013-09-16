@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Giganews-homework1 : Homework assignment for Giganews Applicants" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Giganews-homework1</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/mydor/Giganews-Homework1">View on GitHub</a>
+
+          <h1 id="project_title">Giganews-homework1</h1>
+          <h2 id="project_tagline">Homework assignment for Giganews Applicants</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/mydor/Giganews-Homework1/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/mydor/Giganews-Homework1/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="giganews-homework1" class="anchor" href="#giganews-homework1"><span class="octicon octicon-link"></span></a>Giganews-Homework1</h1>
+
+<p>The evaluation assignment is available in C, Python or Perl.  The code is a simulated email authentication system.  The program takes 2 args, the email address and a password.  There are two steps to this assignment.</p>
+
+<ol>
+<li>Read and comprehend the code, then comment the code.</li>
+<li>Expand the code to accept any number of email address extensions (aliases), while maintaining authentication of the account itself.  Email extensions are in the format of user+alias@domain.  Document any changes made.</li>
+</ol><p>The output template is as follows...</p>
+
+<pre><code>            Before modification                             After modification
+            -------------------                             ------------------
+FAILURE  |  Invalid user/password1 or                    |  Invalid user/password1 or
+         |  Invalid user/password2 or                    |  Invalid user/password2 or
+         |  Invalid user/password3                       |  Invalid user/password3
+
+SUCCESS  |  Authentication successful for &lt;username&gt;     |  Authentication successful for &lt;username&gt;
+         |  User: &lt;user&gt;                                 |  User: &lt;user&gt;
+         |  Domain: &lt;domain&gt;                             |  Domain: &lt;domain&gt;
+         |  Username: &lt;username&gt;                         |  Alias: &lt;alias&gt;
+         |                                               |  Username: &lt;username&gt;
+
+NOTES    |  &lt;username&gt; will include the alias since the  |  &lt;username&gt; should not include the alias, as
+         |  code doesn't know about aliases              |  it's not actually part of the username`
+</code></pre>
+
+<p>Test data is as follows</p>
+
+<p><a href="mailto:user1@domain1.com">user1@domain1.com</a>  testpw1<br><a href="mailto:user1@domain1.com">user1@domain1.com</a>  badpw<br><a href="mailto:user2@domain1.com">user2@domain1.com</a>  testpw2<br><a href="mailto:user2@domain1.com">user2@domain1.com</a>  badpw<br><a href="mailto:unknown@domain2.com">unknown@domain2.com</a>  something<br><a href="mailto:user1+alias1@domain1.com">user1+alias1@domain1.com</a>  testpw1<br><a href="mailto:user1+alias2@domain1.com">user1+alias2@domain1.com</a>  testpw1  </p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Giganews-homework1 maintained by <a href="https://github.com/mydor">mydor</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
