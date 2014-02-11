@@ -30,12 +30,12 @@ FAILURE  |  Invalid user/password1 or                    |  Invalid user/passwor
          |  Invalid user/password3                       |  Invalid user/password3
          | |
 SUCCESS  |  Authentication successful for <username>     |  Authentication successful for <username>
-         |  User: <user>                                 |  User: <user>
-         |  Domain: <domain>                             |  Domain: <domain>
-         |  Username: <username>                         |  Alias: <alias>
-         |                                               |  Username: <username>
+         |  User: ```<user>```                                 |  User: ```<user>```
+         |  Domain: ```<domain>```                             |  Domain: ```<domain>```
+         |  Username: ```<username>```                         |  Alias: ```<alias>```
+         |                                               |  Username: ```<username>```
         | |
-NOTES    |  <username> will include the alias since the  |  <username> should not include the alias, as
+NOTES    |  ```<username>``` will include the alias since the  |  ```<username>``` should not include the alias, as
          |  code doesn't know about aliases              |  it's not actually part of the username
 
 Test data is as follows...
