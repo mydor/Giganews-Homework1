@@ -4,9 +4,6 @@ Giganews-Homework1
 The evaluation assignment is available in C, Python or Perl.  The code is a simulated email authentication
 system.  The program takes 2 args, the email address and a password.  There are two steps to this assignment.
 
-  > The code is a simulated email authentication system
-  > The program takes 2 args, he email address and a password
-
   1. Pick a language to work on and find it's corresponding file.
      The preference is C, then Python and then Perl.
      You only need to process one.
