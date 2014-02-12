@@ -62,21 +62,6 @@
     <td>&lt;username&gt; should not include the alias, as<br />it's not actually part of the username</td>
   </tr>
 </table>
-<pre><code>            Before modification                             After modification
-            -------------------                             ------------------
-FAILURE  |  Invalid user/password1 or                    |  Invalid user/password1 or
-         |  Invalid user/password2 or                    |  Invalid user/password2 or
-         |  Invalid user/password3                       |  Invalid user/password3
-
-SUCCESS  |  Authentication successful for &lt;username&gt;     |  Authentication successful for &lt;username&gt;
-         |  User: &lt;user&gt;                                 |  User: &lt;user&gt;
-         |  Domain: &lt;domain&gt;                             |  Domain: &lt;domain&gt;
-         |  Username: &lt;username&gt;                         |  Alias: &lt;alias&gt;
-         |                                                     |  Username: &lt;username&gt;
-
-NOTES    |  &lt;username&gt; will include the alias since the  |  &lt;username&gt; should not include the alias, as
-         |  code doesn't know about aliases                    |  it's not actually part of the username`
-</code></pre>
 
 <p>Test data is as follows</p>
 <table>
