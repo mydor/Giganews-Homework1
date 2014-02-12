@@ -38,10 +38,10 @@
 <li>The program takes 2 args, the email address and a password.<br>
 </li>
 </ul><ol>
-<li>Pick a language to work on and find it's corresponding file.  The preference is C, Python and then Perl, in that order.  You only need to process one.</li>
+<li>Pick a language to work on and find it's corresponding file.  The preference is C, Python and lastly Perl, in that order.  You only need to pick and work on one.</li>
 <li>Read and comprehend the code.</li>
 <li>Comment the code.</li>
-<li>Expand the code to accept any number of email address extensions (aliases), while maintaining authentication of the account itself.  Email extensions are in the format of user+alias@domain.  Document any changes made.</li>
+<li>Expand the code to accept any number of random email address extensions (aliases), while maintaining authentication of the account itself.  Email extensions are in the format of <b>user+alias@domain</b>.  Document any changes made.</li>
 <li>Return the modified file to HR for review.  Do not try and push changes back to git.  Only submit changed file, not the entire repository.</li>
 </ol><p>The output template is as follows...</p>
 
@@ -55,15 +55,23 @@ SUCCESS  |  Authentication successful for &lt;username&gt;     |  Authentication
          |  User: &lt;user&gt;                                 |  User: &lt;user&gt;
          |  Domain: &lt;domain&gt;                             |  Domain: &lt;domain&gt;
          |  Username: &lt;username&gt;                         |  Alias: &lt;alias&gt;
-         |                                               |  Username: &lt;username&gt;
+         |                                                     |  Username: &lt;username&gt;
 
 NOTES    |  &lt;username&gt; will include the alias since the  |  &lt;username&gt; should not include the alias, as
-         |  code doesn't know about aliases              |  it's not actually part of the username`
+         |  code doesn't know about aliases                    |  it's not actually part of the username`
 </code></pre>
 
 <p>Test data is as follows</p>
-
-<p><a href="mailto:user1@domain1.com">user1@domain1.com</a>  testpw1<br><a href="mailto:user1@domain1.com">user1@domain1.com</a>  badpw<br><a href="mailto:user2@domain1.com">user2@domain1.com</a>  testpw2<br><a href="mailto:user2@domain1.com">user2@domain1.com</a>  badpw<br><a href="mailto:unknown@domain2.com">unknown@domain2.com</a>  something<br><a href="mailto:user1+alias1@domain1.com">user1+alias1@domain1.com</a>  testpw1<br><a href="mailto:user1+alias2@domain1.com">user1+alias2@domain1.com</a>  testpw1  </p>
+<table>
+  <tr><th>User</th><th>Password</th></tr>
+  <tr><td>user1@domain1.com</td><td>testpw1</td></tr>
+  <tr><td>user1@domain1.com</td><td>badpw</td></tr>
+  <tr><td>user2@domain1.com</td><td>testpw2</td></tr>
+  <tr><td>user2@domain1.com</td><td>badpw</td></tr>
+  <tr><td>unknown@domain2.com</td><td>something</td></tr>
+  <tr><td>user1+alias1@domain1.com</td><td>testpw1</td></tr>
+  <tr><td>user1+alias2@domain1.com</td><td>testpw1</td></tr>
+</table>
       </section>
     </div>
 
