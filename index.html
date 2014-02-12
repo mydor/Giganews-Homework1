@@ -45,6 +45,23 @@
 <li>Return the modified file to HR for review.  Do not try and push changes back to git.  Only submit changed file, not the entire repository.</li>
 </ol><p>The output template is as follows...</p>
 
+<table>
+  <tr><th></th><th>Before modification</th><th>After modification</th></tr>
+  <tr><td><b>FAILURE</b></td>
+    <td>Invalid user/password1 or<br />Invalid user/password2 or<br />Invalid user/password3</td>
+    <td>Invalid user/password1 or<br />Invalid user/password2 or<br />Invalid user/password3</td>
+  </tr>
+  <tr>
+    <td><b>SUCCESS</b></td>
+    <td>Authentication successful for &lt;username&gt;<br />User: &lt;user&gt;<br />Domain: &lt;domain&gt;<br />Username: &lt;username&gt;</td>
+    <td>Authentication successful for &lt;username&gt;<br />User: &lt;user&gt;<br />Domain: &lt;domain&gt;<br />Alias: &lt;alias&gt;<br />Username: &lt;username&gt;</td>
+  </tr>
+  <tr>
+    <td><b>NOTES</b></td>
+    <td>&lt;username&gt; will include the alias since the<br />code doesn't know about aliases</td>
+    <td>&lt;username&gt; should not include the alias, as<br />it's not actually part of the username</td>
+  </tr>
+</table>
 <pre><code>            Before modification                             After modification
             -------------------                             ------------------
 FAILURE  |  Invalid user/password1 or                    |  Invalid user/password1 or
